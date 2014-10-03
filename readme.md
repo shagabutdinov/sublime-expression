@@ -11,12 +11,13 @@ sublime-enhanced as well as great amount of navigation keyboard shortcuts.
 
 ### Installation
 
-This plugin is part of sublime-enhanced plugin set. You can install
-sublime-enhanced and this plugin will be installed automatically.
+This plugin is part of [sublime-enhanced](http://github.com/shagabutdinov/sublime-enhanced)
+plugin set. You can install sublime-enhanced and this plugin will be installed
+automatically.
 
 If you would like to install this package separately check "Installing packages
-separately" section of [sublime-enhanced](http://github.com/shagabutdinov
-/sublime-enhanced) package.
+separately" section of [sublime-enhanced](http://github.com/shagabutdinov/sublime-enhanced)
+package.
 
 
 ### Usage
