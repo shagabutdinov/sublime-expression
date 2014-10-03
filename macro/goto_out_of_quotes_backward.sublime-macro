@@ -1,0 +1,14 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[\\s\\S]([\"'`])",
+      "options": {
+        "range": [1024, 0],
+        "tokens": false,
+        "start": [1],
+        "backward": true
+      }
+    }
+  }
+]

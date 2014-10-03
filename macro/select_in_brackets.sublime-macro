@@ -1,0 +1,27 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[({\\[]",
+      "options": {
+        "range": [1024, 0],
+        "tokens": false,
+        "backward": true,
+        "nesting": "end",
+        "start": "end"
+      }
+    }
+  },
+
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[)}\\]]",
+      "expand": true,
+      "options": {
+        "range": [0, 1024],
+        "tokens": false
+      }
+    }
+  }
+]

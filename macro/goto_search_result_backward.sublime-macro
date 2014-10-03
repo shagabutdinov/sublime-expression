@@ -1,0 +1,14 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "\n\\s+\\d+:",
+      "options": {
+        "range": [1024, -1],
+        "backward": true,
+        "tokens": true,
+        "start": "end"
+      }
+    },
+  }
+]

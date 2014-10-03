@@ -1,0 +1,20 @@
+[
+  {
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Expression/macro/select_over_brackets_forward.sublime-macro"
+    }
+  },
+
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[({\\[\"'`]",
+      "delete": true,
+      "options": {
+        "tokens": true,
+        "range": [0, 1024]
+      }
+    }
+  }
+]

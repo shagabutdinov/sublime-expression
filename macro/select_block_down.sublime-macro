@@ -1,0 +1,11 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "\\S(\n\\s*)(?:\n\\s*)+|$",
+      "range": [1, 1024],
+      "expand": true,
+      "options": {"start": [1, 0]}
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[({\\[]",
+      "options": {
+        "range": 1024,
+        "nesting": "end",
+        "tokens": false,
+        "in_current_nesting": true,
+        "backward": true
+      }
+    }
+  }
+]

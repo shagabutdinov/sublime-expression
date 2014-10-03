@@ -1,0 +1,12 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[({\\[\"'`]",
+      "options": {
+        "tokens": true,
+        "range": [0, 1024]
+      }
+    }
+  }
+]

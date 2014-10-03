@@ -1,0 +1,16 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[)}\\]\"'`]",
+      "expand": true,
+      "options": {
+        "tokens": true,
+        "range": [1024, 0],
+        "backward": true,
+        "start": "end",
+        "nesting": true
+      }
+    },
+  }
+]

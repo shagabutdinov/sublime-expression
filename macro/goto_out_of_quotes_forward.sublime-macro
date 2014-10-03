@@ -1,0 +1,14 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[\"'`]()",
+      "options": {
+        "range": [0, 1024],
+        "start": [1],
+        "string": [1],
+        "tokens": false
+      }
+    }
+  }
+]

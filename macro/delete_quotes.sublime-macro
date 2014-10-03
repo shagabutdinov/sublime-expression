@@ -1,0 +1,33 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "([\\s\\S]|^)()\\w?[\"'`]",
+      "options": {
+        "range":[1024, 0],
+        "tokens": false,
+        "backward": true,
+        "start":[2],
+        "string":[1]
+      }
+    }
+  },
+
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[\"'`]()",
+      "expand": true,
+      "options": {
+        "range":[0, 1024],
+        "tokens": false,
+        "string": [1],
+        "start": "end"
+      }
+    }
+  },
+
+  {
+    "command": "left_delete"
+  }
+]

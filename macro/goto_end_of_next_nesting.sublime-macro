@@ -1,0 +1,27 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[\\(\\{\\[]",
+      "options": {
+        "range": 1024,
+        "string": false,
+        "comment": false,
+        "in_current_nesting": true,
+        "start": "end"
+      }
+    }
+  },
+
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "[\\)\\}\\]]",
+      "options": {
+        "range": 1024,
+        "tokens": false,
+        "in_current_nesting": true
+      }
+    }
+  }
+]

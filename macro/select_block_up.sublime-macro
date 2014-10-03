@@ -1,0 +1,15 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "\n\\s*(?:\n\\s*)+|^",
+      "range": [1024, 0],
+      "expand": true,
+      "options": {
+        "backward": true,
+        "start": "end",
+        "cursor": "end"
+      }
+    }
+  }
+]
