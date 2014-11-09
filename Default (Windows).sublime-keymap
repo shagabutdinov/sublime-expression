@@ -7,6 +7,9 @@
     "args": {
       "file": "Packages/Expression/macro/goto_block_up.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   // goto block down
@@ -18,6 +21,9 @@
     "args": {
       "file": "Packages/Expression/macro/goto_block_down.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   // select block up
@@ -29,6 +35,7 @@
       "file": "Packages/Expression/macro/select_block_up.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": true}
     ],
   },
@@ -40,6 +47,7 @@
       "file": "Packages/Expression/macro/select_block_up.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_b_lesser_a", "operator": "equal", "operand": true}
     ],
   },
@@ -51,6 +59,7 @@
       "file": "Packages/Expression/macro/select_block_up.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_b_greater_a", "operator": "equal", "operand": true},
       {"key": "text", "operator": "not_regex_contains", "operand": "\n\\s*\n"},
     ],
@@ -63,6 +72,7 @@
       "file": "Packages/Expression/macro/append_block_up.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_b_greater_a", "operator": "equal", "operand": true},
       {"key": "text", "operator": "regex_contains", "operand": "\n\\s*\n"},
     ],
@@ -77,6 +87,7 @@
       "file": "Packages/Expression/macro/select_block_down.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": true}
     ],
   },
@@ -88,6 +99,7 @@
       "file": "Packages/Expression/macro/select_block_down.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_b_greater_a", "operator": "equal", "operand": true}
     ],
   },
@@ -99,6 +111,7 @@
       "file": "Packages/Expression/macro/select_block_down.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_b_lesser_a", "operator": "equal", "operand": true},
       {"key": "text", "operator": "not_regex_contains", "operand": "\n\\s*\n"},
     ],
@@ -111,6 +124,7 @@
       "file": "Packages/Expression/macro/append_block_down.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_b_lesser_a", "operator": "equal", "operand": true},
       {"key": "text", "operator": "regex_contains", "operand": "\n\\s*\n"},
     ],
@@ -132,6 +146,9 @@
     "args": {
       "file": "Packages/Expression/macro/goto_in_nesting_forward.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -149,6 +166,7 @@
       "file": "Packages/Expression/macro/goto_out_of_quotes_forward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ],
   },
@@ -159,6 +177,9 @@
     "args": {
       "file": "Packages/Expression/macro/goto_over_far_brackets_forward.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   // nesting backward
@@ -169,6 +190,9 @@
     "args": {
       "file": "Packages/Expression/macro/goto_in_nesting_backward.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -186,6 +210,7 @@
       "file": "Packages/Expression/macro/goto_out_of_quotes_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ],
   },
@@ -196,6 +221,9 @@
     "args": {
       "file": "Packages/Expression/macro/goto_over_far_brackets_backward.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   // goto brackets
@@ -207,6 +235,7 @@
       "file": "Packages/Expression/macro/goto_bracket.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "setting.is_widget", "operator": "equal", "operand": false}
     ]
   },
@@ -218,6 +247,7 @@
       "file": "Packages/Expression/macro/goto_bracket_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "following_text", "operator": "regex_contains", "operand": "^[)}\\]]"},
       {"key": "setting.is_widget", "operator": "equal", "operand": false}
     ]
@@ -232,6 +262,7 @@
       "file": "Packages/Expression/macro/goto_quote.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ]
   },
@@ -243,6 +274,7 @@
       "file": "Packages/Expression/macro/goto_quote_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "following_text", "operator": "regex_contains", "operand": "^[\"'`]"},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ]
@@ -256,6 +288,9 @@
     "args": {
       "file": "Packages/Expression/macro/select_in_brackets.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -265,6 +300,7 @@
       "file": "Packages/Expression/macro/select_in_outer_brackets.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "preceding_text_a", "operator": "regex_contains", "operand": "[({\\[]$"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[)}\\]]"}
@@ -280,6 +316,7 @@
       "file": "Packages/Expression/macro/select_in_quotes.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ]
@@ -292,6 +329,7 @@
       "file": "Packages/Expression/macro/select_in_quotes.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "preceding_text_a", "operator": "not_regex_contains", "operand": "[\"'`]$"},
@@ -308,6 +346,7 @@
       "file": "Packages/Expression/macro/delete_in_brackets.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "in_nesting", "operator": "equal", "operand": true}
     ],
   },
@@ -319,6 +358,7 @@
       "file": "Packages/Expression/macro/delete_left_right.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": true, "match_all": true},
       {"key": "preceding_text_a", "operator": "regex_contains", "operand": "[({\\[]$"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[)}\\]]"},
@@ -332,6 +372,7 @@
       "file": "Packages/Expression/macro/delete_in_quotes.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ]
@@ -344,6 +385,7 @@
       "file": "Packages/Expression/macro/delete_quotes.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "preceding_text_a", "operator": "regex_contains", "operand": "[\"'`]$"},
@@ -359,6 +401,9 @@
     "args": {
       "file": "Packages/Expression/macro/select_a_brackets.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   // select a quotes
@@ -370,6 +415,7 @@
       "file": "Packages/Expression/macro/select_a_quotes.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ]
   },
@@ -382,6 +428,9 @@
     "args": {
       "file": "Packages/Expression/macro/select_to_bracket.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -391,6 +440,7 @@
       "file": "Packages/Expression/macro/select_to_outer_bracket.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[)}\\]]"}
     ]
   },
@@ -402,6 +452,7 @@
       "file": "Packages/Expression/macro/select_to_quote.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
       {"key": "following_text_b", "operator": "not_regex_contains",
         "operand": "^[\"'`]"},
@@ -416,6 +467,9 @@
     "args": {
       "file": "Packages/Expression/macro/select_to_bracket_backward.sublime-macro"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -425,6 +479,7 @@
       "file": "Packages/Expression/macro/select_to_outer_bracket_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[({\\[]$"}
     ]
   },
@@ -436,6 +491,7 @@
       "file": "Packages/Expression/macro/select_to_quote_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b_left", "operator": "regex_contains", "operand": "string"},
       {"key": "preceding_text_b", "operator": "not_regex_contains",
         "operand": "[\"'`]$"},
@@ -459,8 +515,9 @@
       "file": "Packages/Expression/macro/delete_to_nesting_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
-      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text", "operator": "regex_contains", "operand": "[)}\\]\"'`][^\\w)}\\]\"'`]+$"},
     ],
   },
@@ -472,7 +529,8 @@
       "file": "Packages/Expression/macro/delete_brackets_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "preceding_text", "operator": "regex_contains", "operand": "[)}\\]]$"},
     ],
@@ -485,8 +543,9 @@
       "file": "Packages/Expression/macro/delete_quotes_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
-      {"key": "scope_b_left", "operator": "regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
+      {"key": "scope_b_left", "operator": "regex_contains", "operand": "comment|symbol|string"},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "preceding_text", "operator": "regex_contains", "operand": "[\"'`]\\s*$"},
     ],
@@ -507,8 +566,9 @@
       "file": "Packages/Expression/macro/delete_to_nesting_forward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[^\\w\\s({\\[\"'`]+[({\\[\"'`]"},
     ],
   },
@@ -520,7 +580,8 @@
       "file": "Packages/Expression/macro/delete_brackets_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
       {"key": "following_text", "operator": "regex_contains", "operand": "^[({\\[]"},
     ],
@@ -533,7 +594,8 @@
       "file": "Packages/Expression/macro/delete_quotes_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "scope_b_right", "operator": "regex_contains", "operand": "string"},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
       {"key": "following_text", "operator": "regex_contains", "operand": "^\\w?[\"'`]"},
@@ -547,7 +609,8 @@
       "file": "Packages/Expression/macro/delete_quotes_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b", "operator": "regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b", "operator": "regex_contains", "operand": "comment|symbol|string"},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "\\s\\w?$"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^\\s*[\"'`]"},
@@ -572,7 +635,8 @@
       "file": "Packages/Expression/macro/goto_nesting.sublime-macro"
     },
     "context": [
-      {"key": "following_text_b", "operator": "regex_contains", "operand": "^([^\\w\\s({\\[\"'`]+|\\s+)[({\\[\"'`]"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "following_text_b", "operator": "regex_contains", "operand": "^([^\\w\\s({\\[\"'`:]+|\\s+)[({\\[\"'`]"},
     ],
   },
 
@@ -583,7 +647,8 @@
       "file": "Packages/Expression/macro/goto_over_brackets_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[({\\[]"},
     ],
   },
@@ -595,9 +660,10 @@
       "file": "Packages/Expression/macro/goto_over_quotes_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|string"},
-      {"key": "scope_b_right", "operator": "regex_contains", "operand": "comment|string"},
-      {"key": "following_text_b", "operator": "regex_contains", "operand": "^\\w?[\"'`]"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
+      {"key": "scope_b_right", "operator": "regex_contains", "operand": "comment|symbol|string"},
+      {"key": "following_text_b", "operator": "regex_contains", "operand": "^[\\w:]?[\"'`]"},
     ],
   },
 
@@ -620,6 +686,7 @@
       "file": "Packages/Expression/macro/select_to_nesting.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^([^\\w\\s({\\[\"'`]+|\\s+)[({\\[\"'`]"},
     ],
   },
@@ -631,7 +698,8 @@
       "file": "Packages/Expression/macro/select_over_brackets_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[({\\[]"},
     ],
   },
@@ -643,9 +711,10 @@
       "file": "Packages/Expression/macro/select_over_quotes_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|string"},
-      {"key": "scope_b_right", "operator": "regex_contains", "operand": "comment|string"},
-      {"key": "following_text_b", "operator": "regex_contains", "operand": "^\\w?[\"'`]"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
+      {"key": "scope_b_right", "operator": "regex_contains", "operand": "comment|symbol|string"},
+      {"key": "following_text_b", "operator": "regex_contains", "operand": "^[\\w:]?[\"'`]"},
     ],
   },
 
@@ -667,6 +736,7 @@
       "file": "Packages/Expression/macro/goto_nesting_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[)}\\]\"'`][^\\w)}\\]\"'`]+$"},
     ],
   },
@@ -678,7 +748,8 @@
       "file": "Packages/Expression/macro/goto_over_brackets_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[)}\\]]\\s*$"},
     ],
   },
@@ -690,7 +761,8 @@
       "file": "Packages/Expression/macro/goto_over_quotes_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[\"'`]\\s*$"},
     ],
   },
@@ -714,6 +786,7 @@
       "file": "Packages/Expression/macro/select_to_nesting_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[)}\\]\"'`][^\\w)}\\]\"'`]+$"},
     ],
   },
@@ -725,7 +798,8 @@
       "file": "Packages/Expression/macro/select_over_brackets_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[)}\\]]\\s*$"},
     ],
   },
@@ -737,8 +811,9 @@
       "file": "Packages/Expression/macro/select_over_quotes_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
-      {"key": "scope_b_left", "operator": "regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
+      {"key": "scope_b_left", "operator": "regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[\"'`]\\s*$"},
     ],
   },
@@ -760,8 +835,9 @@
       "file": "Packages/Expression/macro/delete_to_nesting_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
-      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text", "operator": "regex_contains", "operand": "[)}\\]][^\\w)}\\]]+$"},
     ],
   },
@@ -783,8 +859,9 @@
       "file": "Packages/Expression/macro/delete_to_nesting_forward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": "true"},
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^[^\\w\\s({\\[]+[({\\[]"},
     ],
   },
@@ -798,6 +875,7 @@
       "file": "Packages/Expression/macro/goto_search_result_forward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selector", "operator": "equal", "operand": "text.find-in-files"}
     ]
   },
@@ -809,6 +887,7 @@
       "file": "Packages/Expression/macro/goto_search_result_backward.sublime-macro"
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selector", "operator": "equal", "operand": "text.find-in-files"}
     ]
   },

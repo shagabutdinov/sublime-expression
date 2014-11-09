@@ -6,7 +6,7 @@ sublime-enhanced as well as great amount of navigation keyboard shortcuts.
 
 ### Demo
 
-![Demo](https://raw.github.com/shagabutdinov/sublime-expression/master/demo/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-enhanced-demos/raw/master/expression.gif "Demo")
 
 
 ### Installation
@@ -199,3 +199,8 @@ Example:
 
 There is a bit more methods but probably I'll add them to "deprecated" as there
 is no need of them
+
+
+### Dependencies
+
+None

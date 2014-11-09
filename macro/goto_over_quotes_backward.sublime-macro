@@ -2,7 +2,7 @@
   {
     "command": "goto_expression",
     "args": {
-      "expression": "(?:[\\S\\s]|^)()\\w?[\"'`]",
+      "expression": "(?:[\\S\\s]|^)()[\\w:]?[\"'`]",
       "options": {
         "tokens": false,
         "range": [1024, 0],

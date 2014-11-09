@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+
 from Expression.expression import lookup, get_match_start_end
 
 class GotoExpression(sublime_plugin.TextCommand):
