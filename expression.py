@@ -19,6 +19,17 @@ STOPS = {
   '}': '{',
 }
 
+def get_nesting_type(view, cursor, search_range = None, options = {},
+  expression = r'[({\[]'):
+
+  nesting = get_nesting(view, cursor, search_range, options, expression)
+  if nesting == None:
+    return None
+
+  start = nesting[0]
+
+  return view.substr(sublime.Region(start - 1, start))
+
 def get_nesting(view, cursor, search_range = None, options = {},
   expression = r'[({\[]'):
 
@@ -63,6 +74,8 @@ def get_nesting(view, cursor, search_range = None, options = {},
 
 def lookup(view, cursor, expression, options = {}):
   shift = 0
+
+  options = options.copy()
   if 'range' in options and options['range'] != None:
     if isinstance(options['range'], int):
       count = options['range']
@@ -177,6 +190,13 @@ def find_match(view, cursor, expression, options = {}):
     return None
 
   return matches[0]
+
+def find_text(view, cursor, expression, options = {}):
+  match = find_match(view, cursor, expression, options)
+  if match == None:
+    return None
+
+  return match.group(1)
 
 def find_matches(view, cursor, expression, options = {}):
   backward = options.get('backward', False)

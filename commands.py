@@ -6,6 +6,7 @@ from Expression.expression import lookup, get_match_start_end
 class GotoExpression(sublime_plugin.TextCommand):
   def run(self, edit, expression, options = {}, expand = False, delete = False,
     append = False, range = None, highligh = False):
+
     selections = []
     highlighs = []
     if delete:
@@ -18,7 +19,12 @@ class GotoExpression(sublime_plugin.TextCommand):
     else:
       options['limit'] = 10
 
-    for sel in self.view.sel():
+    size = len(self.view.sel())
+    index = 0
+    while index < size:
+      sel = self.view.sel()[index]
+      index += 1
+
       region, highligh_ranges = self._get_region(sel, expression, options,
         expand, append, range, highligh)
 

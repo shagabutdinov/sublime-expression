@@ -201,6 +201,29 @@ There is a bit more methods but probably I'll add them to "deprecated" as there
 is no need of them
 
 
+##### Additional options for lookup and find_match
+
+Lookup and find match can receive "start" and "end" options which controls
+resulting "start" and "end" positions.
+
+This options can receive following values:
+
+  - "start" - (default for "start") return position of regexp start
+
+  - "end" - (default for "end") return position of whole regexp end
+
+  - "first_non_empty" - first non-empty group
+
+  - "last_non_empty" - first non-empty group
+
+  - integer - (group number) return position of specified group
+
+  - list of integers - (groups number) return position of first non-empty group
+
+Example:
+
+  _, position, _ = lookup(self.view, 0, r'\\(', {"start": "end"}) # returns position after next parenthesis
+
 ### Dependencies
 
 None

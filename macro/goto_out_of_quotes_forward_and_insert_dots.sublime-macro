@@ -1,0 +1,15 @@
+[
+  {
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Expression/macro/goto_out_of_quotes_forward.sublime-macro"
+    },
+  },
+
+  {
+    "command": "insert",
+    "args": {
+      "characters": ": ",
+    }
+  }
+]
