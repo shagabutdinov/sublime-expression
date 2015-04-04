@@ -137,7 +137,10 @@
     "command": "run_macro_file",
     "args": {
       "file": "Packages/Expression/macro/goto_end_of_next_nesting.sublime-macro"
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -156,7 +159,10 @@
     "command": "run_macro_file",
     "args": {
       "file": "Packages/Expression/macro/goto_out_of_nesting_forward.sublime-macro"
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -200,7 +206,10 @@
     "command": "run_macro_file",
     "args": {
       "file": "Packages/Expression/macro/goto_out_of_nesting_backward.sublime-macro"
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -505,7 +514,10 @@
     "command": "delete_word",
     "args": {
       "forward": false
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -556,7 +568,10 @@
   {
     "keys": ["ctrl+alt+/"],
     "command": "delete_word",
-    "args": {"forward": true}
+    "args": {"forward": true},
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -625,7 +640,10 @@
     "args": {
       "by": "word_ends",
       "forward": true
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -676,7 +694,10 @@
       "by": "word_ends",
       "forward": true,
       "extend": true
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -726,7 +747,10 @@
     "args": {
       "by": "words",
       "forward": false
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -776,7 +800,10 @@
       "by": "words",
       "forward": false,
       "extend": true
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -825,7 +852,10 @@
     "command": "run_macro_file",
     "args": {
       "file": "Packages/Expression/macro/delete_subword_backward.sublime-macro"
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
@@ -849,7 +879,10 @@
     "command": "run_macro_file",
     "args": {
       "file": "Packages/Expression/macro/delete_subword_forward.sublime-macro"
-    }
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
+    ]
   },
 
   {
