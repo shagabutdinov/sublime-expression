@@ -196,7 +196,7 @@ def find_text(view, cursor, expression, options = {}):
   if match == None:
     return None
 
-  return match.group(1)
+  return match.group(options.get('group', 1))
 
 def find_matches(view, cursor, expression, options = {}):
   backward = options.get('backward', False)
@@ -219,7 +219,7 @@ def find_matches(view, cursor, expression, options = {}):
     ignored_nesting += _get_inversed_nesting_ranges_for_cursor(view, cursor,
       text, shift)
 
-  matches = list(re.finditer(expression, text))
+  matches = list(re.finditer(expression, text, options.get('options', 0)))
   if backward:
     matches = reversed(matches)
 
