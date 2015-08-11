@@ -192,11 +192,13 @@ def find_match(view, cursor, expression, options = {}):
   return matches[0]
 
 def find_text(view, cursor, expression, options = {}):
-  match = find_match(view, cursor, expression, options)
-  if match == None:
+  options = options.copy()
+  options['limit'] = 1
+  matches, _, _, _ = lookup(view, cursor, expression, options)
+  if len(matches) == 0:
     return None
 
-  return match.group(options.get('group', 1))
+  return matches[0].group(options.get('group', 1))
 
 def find_matches(view, cursor, expression, options = {}):
   backward = options.get('backward', False)

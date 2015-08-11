@@ -155,6 +155,23 @@
   },
 
   {
+    "keys": ["keypad_enter"],
+    "command": "none",
+  },
+
+  {
+    "keys": ["keypad_enter"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Expression/macro/goto_out_of_nesting_forward.sublime-macro"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "following_text", "operator": "regex_contains", "operand": "[\\]\\}\\)]", "match_all": true},
+    ]
+  },
+
+  {
     "keys": ["alt+shift+enter"],
     "command": "run_macro_file",
     "args": {
@@ -163,7 +180,7 @@
     "context": [
       {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true}
     ]
-  },
+  }, 
 
   {
     "keys": ["alt+shift+enter"],
@@ -175,6 +192,19 @@
       {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b", "operator": "regex_contains", "operand": "string"},
     ],
+  },
+
+  {
+    "keys": ["keypad_enter"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true,
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "following_text", "operator": "regex_contains", "operand": "^[`'\"\\)\\}\\],]", "match_all": true},
+    ]
   },
 
   {
