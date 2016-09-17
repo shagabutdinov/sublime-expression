@@ -3,7 +3,7 @@
     "command": "goto_expression",
     "args": {
       "expression": "\n\\s*(?:\n\\s*)+|^",
-      "range": [1024, 0],
+      "range": [4096, 0],
       "expand": true,
       "options": {
         "backward": true,

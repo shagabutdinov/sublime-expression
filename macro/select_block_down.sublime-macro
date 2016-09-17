@@ -2,8 +2,8 @@
   {
     "command": "goto_expression",
     "args": {
-      "expression": "\\S(\n\\s*)(?:\n\\s*)+|$",
-      "range": [1, 1024],
+      "expression": "\\S(\\s*\n\\s*)(?:\n\\s*)+|$",
+      "range": [1, 4096],
       "expand": true,
       "options": {"start": [1, 0]}
     }
