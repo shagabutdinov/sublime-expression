@@ -3,7 +3,7 @@
     "command": "goto_expression",
     "args": {
       "expression": "\n[\\t ]*()(?:\n\\s*)+|()$",
-      "range": [1, 5120],
+      "range": [1, 65536],
       "options": {"start": [1, 2]}
     }
   }

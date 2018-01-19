@@ -4,7 +4,7 @@
     "args": {
       "expression": "\n[\\t ]*()(?:\n\\s*)+|^()",
       "options": {
-        "range": [5120, 0],
+        "range": [65536, 0],
         "backward": true,
         "start": [1, 2],
         "cursor": "end"
